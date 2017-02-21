@@ -4,7 +4,7 @@
   "description": "Basic setup for JS tests with Mocha, Chai and babel",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/marcinru/mocha-chai-seed#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.23.0",
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
   }
