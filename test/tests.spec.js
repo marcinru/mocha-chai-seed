@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { PrimeChecker } from '../src/index.js';
 
-describe('PrimeChecker', () => {
+describe('PrimeChecker check(val) method', () => {
   let checker;
 
   beforeEach(() => {
@@ -18,6 +18,10 @@ describe('PrimeChecker', () => {
 
   it('should return false when passed 8', () => {
     expect(checker.check(8)).to.eql(false);
+  })
+
+  it('should return true when passed 13', () => {
+    expect(checker.check(13)).to.eql(true);
   })
 
   it('should throw an error when called without a value', () => {
